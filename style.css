@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #8908a3, #1a0a96);
+}
+
+.login-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    backdrop-filter: blur(10px);
+}
+
+h2 {
+    margin-bottom: 25px;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+/* Input maydoni */
+input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid white;
+    background: transparent;
+    outline: none;
+    color: white;
+    font-size: 16px;
+}
+
+/* Label (matn) */
+.input-container label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+
+/* Input fokus bo'lsa label yuqoriga chiqadi */
+input:focus + label,
+input:valid + label {
+    top: -10px;
+    left: 0;
+    font-size: 14px;
+    color: white;
+}
+
+/* Remember me qismi */
+.remember-me {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    color: white;
+}
+
+.remember-me input {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+}
+
+/* Submit tugmasi */
+button {
+    padding: 10px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 25px;
+    background-color: white;
+    cursor: pointer;
+}
